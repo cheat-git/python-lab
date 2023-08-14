@@ -1,0 +1,41 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = pd.read_csv('data.csv')
+data.plot()
+plt.title('Data visualisation')
+plt.show()
+
+plt.scatter(data['Attack'],data['Defense'],c='red')
+plt.title('Scatter graph')
+plt.xlabel('Attack')
+plt.ylabel('Defense')
+plt.show()
+
+
+plt.hist(data['Attack'],edgecolor='black')
+plt.title('Histogram graph')
+plt.xlabel('Attack')
+plt.ylabel('frequency')
+plt.show()
+
+# df1=pd.read_csv('/content/iris (1).csv')
+# df1.plot()
+# plt.ylim(0,10)
+# plt.show()
+# plt.scatter(df1.index, df1['sepal.length'])
+# plt.title("Scatter Plot of Column 'col1'")
+# plt.xlabel("Index")
+# plt.ylabel("Column 'variety'")
+# plt.show()
+# plt.scatter(df1.index, df1['sepal.length'], c=df1['petal.length'], cmap='viridis')
+# plt.title("Scatter Plot with Different Colors")
+# plt.xlabel("Index")
+# plt.ylabel("Column 'sepal.length'")
+# plt.colorbar(label="Column petal.length'")
+# plt.show()
+# plt.hist(df1['variety'], bins=10)
+# plt.title("Histogram of Column 'variety'")
+# plt.xlabel("Values")
+# plt.ylabel("Frequency")
+# plt.show()
